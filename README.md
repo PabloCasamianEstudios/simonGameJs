@@ -12,3 +12,9 @@ Un juego clásico de memoria en el que el jugador debe repetir una secuencia de 
 ## Requisitos
 
 Para ejecutar este proyecto, solo necesitas un navegador web moderno que soporte JavaScript.
+
+## Instalación
+
+1. Clona este repositorio o descarga los archivos.
+   ```bash
+   git clone https://github.com/PabloCasamianEstudios/simonGameJs.git
