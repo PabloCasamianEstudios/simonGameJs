@@ -5,28 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simon Game</title>
 
-    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <div class="container">
         <h1>Js Simon Game</h1>
-        <h3>Current high score: <span id="puntuacion">0</span></h3>
-
-        <button>START</button>
-        <button>RESET</button>
+        <h2>Actual high score: <span id="high">0</span></h2>
+        <p>Score: <span id="score">0</span></p>
+        
+        <button onclick="start()" class="botones"> START </button>
+        <button onclick="restart()" class="botones">RESTART</button>
 
         <div class="board">
-            <button class="verde"></button>
-            <button class="rojo"></button>
-            <button class="amarillo"></button>
-            <button class="azul"></button>
+            <button onclick="colorClick('verde')" id="verde"></button>
+            <button onclick="colorClick('rojo')" id="rojo"></button>
+            <button onclick="colorClick('amarillo')" id="amarillo"></button>
+            <button onclick="colorClick('azul')" id="azul"></button>
         </div>
+        <button onclick="simon()" id="simon" class="botones">SIMON</button>
 
-        <button class="simon">JS SIMON</button>
 
     </div>
+
 
 </body>
 </html>
